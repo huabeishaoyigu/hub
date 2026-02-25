@@ -1,0 +1,1 @@
+首先，确保这三个文件都放在同一个文件夹内，并安装必要的库（pip install torch torchvision matplotlib tqdm）；接着，运行 robust_trainer.py，它会自动下载数据并训练出一个具备初步防御能力的模型文件（.pth）；最后，运行 main_benchmark.py，该脚本会自动调用 adversarial_suite.py 中的攻击引擎，对你训练好的模型进行实战攻坚，并在控制台输出攻击成功率，同时在当前目录下生成一张名为 result.png 的对比图，让你直观地看到模型是如何被欺骗以及如何防御的。
